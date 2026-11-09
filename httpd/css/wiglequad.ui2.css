@@ -1,0 +1,20 @@
+/* WWWD quad window and ribbon stat, for the Kismet web UI */
+.wiglequad-window { display: flex; flex-direction: column; gap: 0.5rem; padding: 0.75rem; }
+.wiglequad-window h3 { margin: 0.5rem 0 0; font-size: 1rem; }
+.wiglequad-window p { margin: 0; }
+.wiglequad-state { display: flex; align-items: center; gap: 0.5em; font-weight: 600; font-size: 1.1rem; }
+.wiglequad-state .icon { width: 1.3em; height: 1.3em; }
+.wiglequad-in { color: var(--ok); }
+.wiglequad-out { color: var(--error); }
+.wiglequad-nogps, .wiglequad-none { color: var(--muted); }
+.wiglequad-coords { display: grid; grid-template-columns: auto 1fr auto 1fr; gap: 0.4rem 0.5rem; align-items: center; }
+.wiglequad-coord { min-width: 0; font-variant-numeric: tabular-nums; }
+.wiglequad-censored { filter: blur(5px); }
+.wiglequad-censored:focus { filter: none; }
+.wiglequad-error { color: var(--error); }
+.wiglequad-note { color: var(--warn); }
+.wiglequad-links { justify-content: flex-start; }
+.wiglequad-sound { display: flex; flex-direction: column; gap: 0.2rem; }
+.wiglequad-sound-file { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4em; padding-left: 1.6em; font-size: 0.9rem; }
+.wiglequad-sound-file .link-button[hidden] { display: none; }
+.stat.wiglequad-out .stat-value, .stat.wiglequad-out .icon { color: var(--error); }
